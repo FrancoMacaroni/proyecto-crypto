@@ -1,0 +1,175 @@
+
+.store{
+    margin-top: 120px;
+}
+
+.tituloTienda{
+  color: #20509e;
+	margin: 10px;
+	font-weight: 500;
+	font-family: "Futura", sans-serif;
+}
+
+.subtituloTienda{
+  color: #20509e;
+	margin: 10px;
+	font-size: 20px;
+	font-family: "Futura", sans-serif;
+}
+
+
+
+
+.item {
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #000000;
+  }
+  
+  .item-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Futura", sans-serif;
+    color: #ffffff;
+  }
+  
+  .item-image {
+    height: 320px;
+    width: 100%;
+    
+  }
+  
+  .item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px 15px;
+    font-family: "Futura", sans-serif;
+    color: #fdfeff;
+  }
+  
+  .item-details > .item-price {
+    margin: 0;
+  }
+  
+  
+  /* ? SHOPPING CART */
+  .tituloCarrito{
+    font-family: "Futura", sans-serif;
+    margin: 30px;
+  }
+
+  .shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+  
+  .shopping-cart-quantity-input {
+    max-width: 160px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .shopping-cart-total {
+    min-height: 96px;
+  }
+  
+  /* boton */
+
+
+  @media (hover: hover) {
+    #creditcard {
+      /*  set start position */
+      transform: translateY(110px);
+      transition: transform 0.1s ease-in-out;
+      /*  set transition for mouse enter & exit */
+    }
+  
+    #money {
+      /*  set start position */
+      transform: translateY(180px);
+      transition: transform 0.1s ease-in-out;
+      /*  set transition for mouse enter & exit */
+    }
+  
+    button:hover #creditcard {
+      transform: translateY(0px);
+      transition: transform 0.2s ease-in-out;
+      /*  overide transition for mouse enter */
+    }
+  
+    button:hover #money {
+      transform: translateY(0px);
+      transition: transform 0.3s ease-in-out;
+      /*  overide transition for mouse enter */
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-0.25rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .button:hover .button__text span {
+    transform: translateY(-0.25rem);
+    transition: transform .2s ease-in-out;
+  }
+  
+  /* styling */
+  
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+  
+
+  
+  .button {
+    border: none;
+    outline: none;
+    background-color: purple;
+    padding: 10px 70px 10px 10px;
+    position: relative;
+    border-radius: 8px;
+    letter-spacing: 0.7px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 21px;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+  }
+  
+  .button:active {
+    transform: translateY(1px);
+  }
+  
+  .button__svg {
+    position: absolute;
+    overflow: visible;
+    bottom: 6px;
+    right: 0.2rem;
+    height: 140%;
+  }
+
+  .buttonDelete{
+    background-color: #000;
+    color: #fff;
+  }
+  

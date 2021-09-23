@@ -13,6 +13,7 @@
 	<!-- css -->	
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/carrito.css">
+  <link rel="stylesheet" href="css/tarjeta.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/themify-icons.css"/>
@@ -347,6 +348,49 @@
             <div class="shopping-cart-items shoppingCartItemsContainer">
             </div>
             <!-- ? END SHOPPING CART ITEMS -->
+          
+
+            <!-- Tarjeta -->
+   <div class='containertarjeta'>
+    
+  
+    <div class='credit-info'>
+      <div class='credit-info-content'>
+        <table class='half-input-table'>
+          <tr><td>Por favor seleccione su tarjeta: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+            <div class='dropdown-select'>
+            <ul>
+              <li>Master Card</li>
+              <li>American Express</li>
+              </ul></div>
+            </div>
+           </td></tr>
+        </table>
+        <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+        Numero de tarjeta
+        <input class='input-field'></input>
+        Nombre del titular
+        <input class='input-field'></input>
+        <table class='half-input-table'>
+          <tr>
+            <td> Expira
+              <input class='input-field'></input>
+            </td>
+            <td>CVV
+              <input class='input-field'></input>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+</div>
+<!-- Tarjeta -->
+
+
+
+
 
             <!-- START TOTAL -->
             <div class="row">
@@ -362,9 +406,6 @@
                                 <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
-                            </div>
-                            <div class="toast-body text-white">
-                                Se aumentó correctamente la cantidad
                             </div>
                         </div>
                         <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
@@ -468,7 +509,7 @@
 
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
-
+    <script src="js/tarjeta.js"></script>
     <script src="js/carrito.js"></script>
 
 </body>

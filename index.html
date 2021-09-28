@@ -44,6 +44,11 @@
 			</a>		
 			<nav class="main-menu">
 				<ul class="menu-list">
+					<div id="signForm" class='d-inline mr-2'>
+						<input type="text" placeholder="Ingrese su usuario" id="txtCorreo">
+						<input type="password" placeholder="Ingrese su contraseña" id="txtContraseña">
+						<input type="button" onclick="buscar_usuario('user')" value="Ingresar" id="btnIngresar">
+					</div>
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="conversor.html">Conversor</a></li>
 					<li><a href="tienda.html">Tienda</a></li>
@@ -197,6 +202,7 @@
 
 
 	<!--====== Javascripts & Jquery ======-->
+	<script src="js/iniciarsesion.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
